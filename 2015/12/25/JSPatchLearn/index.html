@@ -5,16 +5,22 @@
   
   <title>JSPatch使用记录 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="覆盖多个类 123456defineClass(&amp;apos;classA&amp;apos;,&amp;#123;    &amp;#125;);defineClass(&amp;apos;classB&amp;apos;,&amp;#123;    &amp;#125;);">
+  <meta name="description" content="使用JSPatchConvertor可以转化OC代码,但是转化之后基本是不能用的😁,仍需自己修改部分代码
+
+覆盖多个类 123456defineClass(&amp;apos;classA&amp;apos;,&amp;#123;    &amp;#125;);defineClass(&amp;apos;classB&amp;apos;,&amp;#123;    &amp;#125;);">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JSPatch使用记录">
-<meta property="og:url" content="http://yoursite.com/2015/12/25/JSPatchLearn/index.html">
+<meta property="og:url" content="https://github.com/WadonLiu/WadonLiu.github.io/2015/12/25/JSPatchLearn/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="覆盖多个类 123456defineClass(&amp;apos;classA&amp;apos;,&amp;#123;    &amp;#125;);defineClass(&amp;apos;classB&amp;apos;,&amp;#123;    &amp;#125;);">
-<meta property="og:updated_time" content="2016-12-03T13:20:09.000Z">
+<meta property="og:description" content="使用JSPatchConvertor可以转化OC代码,但是转化之后基本是不能用的😁,仍需自己修改部分代码
+
+覆盖多个类 123456defineClass(&amp;apos;classA&amp;apos;,&amp;#123;    &amp;#125;);defineClass(&amp;apos;classB&amp;apos;,&amp;#123;    &amp;#125;);">
+<meta property="og:updated_time" content="2016-12-03T14:26:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JSPatch使用记录">
-<meta name="twitter:description" content="覆盖多个类 123456defineClass(&amp;apos;classA&amp;apos;,&amp;#123;    &amp;#125;);defineClass(&amp;apos;classB&amp;apos;,&amp;#123;    &amp;#125;);">
+<meta name="twitter:description" content="使用JSPatchConvertor可以转化OC代码,但是转化之后基本是不能用的😁,仍需自己修改部分代码
+
+覆盖多个类 123456defineClass(&amp;apos;classA&amp;apos;,&amp;#123;    &amp;#125;);defineClass(&amp;apos;classB&amp;apos;,&amp;#123;    &amp;#125;);">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -54,6 +60,9 @@
     <div class="overlay"></div>
 <div class="intrude-less">
     <header id="header" class="inner">
+        <div >
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="30" width=300 height=80 src="http://music.163.com/outchain/player?type=2&id=169185&auto=1&height=66"></iframe>
+        </div>
         <a href="/" class="profilepic">
             
             <img lazy-src="/img/head.jpg" class="js-avatar">
@@ -114,14 +123,6 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/Home">博客首页</a></li>
-                        
-                            <li><a href="/works">作品展示</a></li>
-                        
-                            <li><a href="/about">留言打卡</a></li>
-                        
-                            <li><a href="/FrontEndGuide">前端导航</a></li>
-                        
                         </ul>
                     </nav>
                     <nav class="header-nav">
@@ -130,16 +131,6 @@
                                 <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KhIbGBoaGBoZH2pbWwRJRUc" title="mail">mail</a>
                             
                                 <a class="fl github" target="_blank" href="https://github.com/WadonLiu" title="github">github</a>
-                            
-                                <a class="fl zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-                            
-                                <a class="fl weibo" target="_blank" href="#" title="weibo">weibo</a>
-                            
-                                <a class="fl google" target="_blank" href="#" title="google">google</a>
-                            
-                                <a class="fl twitter" target="_blank" href="#" title="twitter">twitter</a>
-                            
-                                <a class="fl linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
                             
                         </ul>
                     </nav>
@@ -171,6 +162,7 @@
                 </section>
                 
             </div>
+
         </div>
     </header>                
 </div>
@@ -195,14 +187,6 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/Home">博客首页</a></li>
-                
-                    <li><a href="/works">作品展示</a></li>
-                
-                    <li><a href="/about">留言打卡</a></li>
-                
-                    <li><a href="/FrontEndGuide">前端导航</a></li>
-                
                 <div class="clearfix"></div>
                 </ul>
             </nav>
@@ -212,16 +196,6 @@
                         <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KhIbGBoaGBoZH2pbWwRJRUc" title="mail">mail</a>
                     
                         <a class="github" target="_blank" href="https://github.com/WadonLiu" title="github">github</a>
-                    
-                        <a class="zhihu" target="_blank" href="#" title="zhihu">zhihu</a>
-                    
-                        <a class="weibo" target="_blank" href="#" title="weibo">weibo</a>
-                    
-                        <a class="google" target="_blank" href="#" title="google">google</a>
-                    
-                        <a class="twitter" target="_blank" href="#" title="twitter">twitter</a>
-                    
-                        <a class="linkedin" target="_blank" href="#" title="linkedin">linkedin</a>
                     
                 </div>
             </nav>
@@ -266,18 +240,14 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <ol>
-<li>覆盖多个类 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">defineClass(&apos;classA&apos;,&#123;</div><div class="line">    </div><div class="line">&#125;);</div><div class="line">defineClass(&apos;classB&apos;,&#123;</div><div class="line">    </div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-</li>
-</ol>
-<a id="more"></a>
-<blockquote>
+        <blockquote>
 <p>使用JSPatchConvertor可以转化OC代码,但是转化之后基本是不能用的😁,仍需自己修改部分代码</p>
 <ol>
 <li>覆盖多个类 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">defineClass(&apos;classA&apos;,&#123;</div><div class="line">    </div><div class="line">&#125;);</div><div class="line">defineClass(&apos;classB&apos;,&#123;</div><div class="line">    </div><div class="line">&#125;);</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </blockquote>
+<a id="more"></a>
 <ol>
 <li>NSArray不能使用<code>array[0]</code>访问,需要使用<code>array.objectAtIndex(0)</code>访问</li>
 <li><p>NSDictionary需要更改<code>dic[@&quot;key&quot;]</code>为<code>dic.objectForKey[&#39;key&#39;]</code></p>
@@ -288,7 +258,7 @@
 <li><p>调用变量后面要加(),</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var indexPath = self.tableView().indexPathForCell(cell);</div><div class="line">var section = indexPath.section();</div></pre></td></tr></table></figure>
 </li>
-<li><p>枚举需要换成实际的数值<br>参考链接: <a href="https://github.com/bang590/JSPatch/wiki" target="_blank" rel="external">JSPatch 文档</a> </p>
+<li><p>枚举需要换成实际的数值<br>参考链接: <a href="https://github.com/bang590/JSPatch/wiki">JSPatch 文档</a> </p>
 </li>
 </ol>
 
@@ -302,10 +272,10 @@
         <p><span>本文标题:</span><a href="/2015/12/25/JSPatchLearn/">JSPatch使用记录</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 LiuWeidong 的个人博客">LiuWeidong</a></p>
         <p><span>发布时间:</span>2015年12月25日 - 18时29分</p>
-        <p><span>最后更新:</span>2016年12月03日 - 21时20分</p>
+        <p><span>最后更新:</span>2016年12月03日 - 22时26分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2015/12/25/JSPatchLearn/" title="JSPatch使用记录">http://yoursite.com/2015/12/25/JSPatchLearn/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2015/12/25/JSPatchLearn/　　作者: LiuWeidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2015/12/25/JSPatchLearn/" title="JSPatch使用记录">https://github.com/WadonLiu/WadonLiu.github.io/2015/12/25/JSPatchLearn/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://github.com/WadonLiu/WadonLiu.github.io/2015/12/25/JSPatchLearn/　　作者: LiuWeidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -379,7 +349,7 @@
     
       <div class="duoshuo" id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="2015/12/25/JSPatchLearn/" data-title="JSPatch使用记录" data-url="http://yoursite.com/2015/12/25/JSPatchLearn/"></div>
+    <div class="ds-thread" data-thread-key="2015/12/25/JSPatchLearn/" data-title="JSPatch使用记录" data-url="https://github.com/WadonLiu/WadonLiu.github.io/2015/12/25/JSPatchLearn/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
